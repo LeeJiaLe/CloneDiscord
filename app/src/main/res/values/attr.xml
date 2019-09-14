@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundProfilePic">
+        <attr name="rpp_state" format="string" />
+        <attr name="rpp_img" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ChannelNameText">
+        <attr name="cnt_name" format="string" />
+        <attr name="cnt_type" format="string" />
+        <attr name="cnt_selected" format="string" />
+    </declare-styleable>
+</resources>

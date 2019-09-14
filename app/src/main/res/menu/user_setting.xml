@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="USER SETTINGS">
+        <menu>
+            <item
+                android:icon="@drawable/ic_person_grey"
+                android:title="My Account" />
+            <item
+                android:icon="@drawable/ic_security_black_24dp"
+                android:title="Privacy Safety" />
+            <item
+                android:icon="@drawable/ic_devices_grey_24dp"
+                android:title="Connection" />
+            <item
+                android:icon="@drawable/ic_credit_card_grey"
+                android:title="Billing" />
+            <item
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Discord Nitro" />
+        </menu>
+
+    </item>
+
+    <item android:title="APP SETTING">
+        <menu>
+            <item
+                android:icon="@drawable/ic_mic_black_24dp"
+                android:title="Voice Video" />
+            <item
+                android:icon="@drawable/ic_notifications_black_24dp"
+                android:title="Notifications" />
+            <item
+                android:icon="@drawable/ic_image_black_24dp"
+                android:title="Text Images" />
+            <item
+                android:icon="@drawable/ic_color_lens_black_24dp"
+                android:title="Appearance" />
+            <item
+                android:icon="@drawable/ic_settings_grey"
+                android:title="Behavior" />
+            <item
+                android:icon="@drawable/ic_translate_black_24dp"
+                android:title="Language" />
+
+        </menu>
+    </item>
+
+    <item android:title="APP INFORMATION - CLONE">
+        <menu>
+            <item
+                android:icon="@drawable/ic_error_black_24dp"
+                android:title="Change Log" />
+            <item
+                android:icon="@drawable/ic_help_black_24dp"
+                android:title="Support" />
+            <item
+                android:icon="@drawable/ic_error_black_24dp"
+                android:title="Acknowledgements" />
+
+
+        </menu>
+    </item>
+
+</menu>

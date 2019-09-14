@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="0dp"
+    android:id="@+id/server_bottom_sheet"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <discord.clone.com.clonediscord.RoundProfilePic
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:rpp_state="2"
+            app:rpp_img="@drawable/cat_0"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/bottom_icon"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:text="server3"
+            android:id="@+id/bottom_sheet_title"
+            android:textColor="#ccc"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:gravity="center|center"
+            android:textSize="18sp"
+            android:textColor="#aaa"
+            android:paddingStart="7dp"
+            android:paddingEnd="0dp"
+            android:drawableStart="@drawable/ic_notifications_gre"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="start|center"
+            android:textSize="16sp"
+            android:textColor="#ccc"
+            android:text="Notification Setting"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:gravity="center|center"
+            android:textSize="18sp"
+            android:textColor="#aaa"
+            android:paddingStart="7dp"
+            android:paddingEnd="0dp"
+            android:drawableStart="@drawable/ic_remove_red_eye_grey"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="start|center"
+            android:textSize="16sp"
+            android:textColor="#ccc"
+            android:text="Mark As Read"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:gravity="center|center"
+            android:textSize="18sp"
+            android:textColor="#aaa"
+            android:paddingStart="7dp"
+            android:paddingEnd="0dp"
+            android:drawableStart="@drawable/ic_remove_red_eye_grey"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="start|center"
+            android:textSize="16sp"
+            android:textColor="#ccc"
+            android:text="Hide Muted Channels"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:gravity="center|center"
+            android:textSize="18sp"
+            android:textColor="#aaa"
+            android:paddingStart="7dp"
+            android:paddingEnd="0dp"
+            android:drawableStart="@drawable/ic_person_grey"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="start|center"
+            android:textSize="16sp"
+            android:textColor="#ccc"
+            android:text="Change Nickname"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:gravity="center|center"
+            android:textSize="18sp"
+            android:textColor="#aaa"
+            android:paddingStart="7dp"
+            android:paddingEnd="0dp"
+            android:drawableStart="@drawable/ic_email_grey"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="start|center"
+                android:textSize="16sp"
+                android:textColor="#ccc"
+                android:text="Direct Messeges"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#aaa"
+                    android:text="Allow direct messages from server members"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    />
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:gravity="center|center"
+            android:textSize="18sp"
+            android:textColor="#aaa"
+            android:paddingStart="7dp"
+            android:paddingEnd="0dp"
+            android:drawableStart="@drawable/ic_exit_to_app_red"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="start|center"
+            android:textSize="16sp"
+            android:textColor="#B22222"
+            android:text="Leave Server"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

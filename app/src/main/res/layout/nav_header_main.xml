@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222"
+    android:orientation="vertical"
+    android:divider="?android:dividerHorizontal"
+    android:showDividers="middle"
+    android:fitsSystemWindows="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#fff"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_weight="1">
+
+
+        <discord.clone.com.clonediscord.ServerRecyclerView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/sidePrimaryDark"
+            android:id="@+id/re_server_list"
+            >
+
+        </discord.clone.com.clonediscord.ServerRecyclerView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/sidePrimary"
+            android:orientation="vertical"
+
+            >
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/sidePrimary"
+                    android:id="@+id/channel_toolbar"
+                    />
+            </android.support.design.widget.AppBarLayout>
+            <discord.clone.com.clonediscord.ChannelRecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/sidePrimary"
+                android:id="@+id/re_channel_list"
+
+                >
+            </discord.clone.com.clonediscord.ChannelRecyclerView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/sidePrimary">
+
+        <discord.clone.com.clonediscord.RoundProfilePic
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rpp_img="@mipmap/ic_launcher"
+            app:rpp_state="0"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:text="Deep Sea Lolicon"
+            android:textSize="15sp"
+            android:textColor="#fff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="1dp"
+            android:text="#2336"
+            android:textSize="12sp"
+            android:textColor="#777"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <ImageButton
+            android:id="@+id/btn_acc_search"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_search_grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_at"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageButton
+            android:id="@+id/btn_at"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_at_sign"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_acc_setting"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_acc_setting"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_settings_grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
+

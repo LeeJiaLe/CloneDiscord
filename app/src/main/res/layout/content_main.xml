@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="discord.clone.com.clonediscord.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <discord.clone.com.clonediscord.MessagesRecyclerView
+        android:id="@+id/re_message_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/messageLine"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </discord.clone.com.clonediscord.MessagesRecyclerView>
+
+    <View
+        android:id="@+id/messageLine"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+
+        android:background="#000"
+        app:layout_constraintBottom_toTopOf="@+id/sendMessageView"
+        app:layout_constraintTop_toBottomOf="@+id/re_message_list" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/sendMessageView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btnPlusFile"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:background="#00000000"
+            android:drawablePadding="3dp"
+            android:drawableStart="@drawable/ic_add_grey_24dp"
+            android:paddingEnd="3dp"
+            android:paddingStart="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnEmoji"
+            app:layout_constraintStart_toEndOf="@+id/btnPlusFile"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="#bbb"
+            android:background="@null"
+            android:hint="message to server"
+            android:textColorHint="#888"
+            android:textCursorDrawable="@null"
+            tools:layout_editor_absoluteY="3dp" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:background="#00000000"
+            android:drawablePadding="3dp"
+            android:drawableStart="@drawable/ic_send_grey_24dp"
+            android:paddingEnd="3dp"
+            android:paddingStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnEmoji"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:background="#00000000"
+            android:drawablePadding="3dp"
+            android:drawableStart="@drawable/ic_tag_faces_grey_24dp"
+            android:paddingEnd="3dp"
+            android:paddingStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnSend"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
